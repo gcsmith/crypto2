@@ -1,0 +1,63 @@
+Garrett Smith
+Cryptography 2 - HW1
+
+================================================================================
+
+The complete output of elgamal is listed in 'output.txt'.
+
+================================================================================
+
+The program 'elgamal.c' was developed using C and the GNU multiple precision
+arithmetic library (GMP). It begins by parsing the ciphertext table from the
+file 'cipher', then decrypts and displays each plaintext block as three ASCII
+characters. Each block is decrypted as described in the textbook using the
+(y1, y2) pair, a, and p (which are known in advance), using the formula:
+    x = y2 * (y1^a)^(-1) mod p
+
+The following plaintext was recovered:
+
+SHESTANDSUPINTHEGARDENWHERESHEHASBEENWORKINGANDLOOKSINTOTHEDISTANCESHEHASSENSEDA
+CHANGEINTHEWEATHERTHEREISANOTHERGUSTOFWINDABUCKLEOFNOISEINTHEAIRANDTHETALLCYPRES
+SESSWAYSHETURNSANDMOVESUPHILLTOWARDSTHEHOUSECLIMBINGOVERALOWWALLFEELINGTHEFIRSTD
+ROPSOFRAINONHERBAREARMSSHECROSSESTHELOGGIAANDQUICKLYENTERSTHEHOUSE
+
+================================================================================
+
+The K values were recovered by using Shank's algorithm to perform the discrete
+logarithm. This is implemented in the function 'dl_shanks'. A brute force
+version was also developed, 'dl_bruteforce', to validate the results.
+
+The first 30 values of K were recovered:
+
+k(0) = 29705
+k(1) = 28841
+k(2) = 18076
+k(3) = 21011
+k(4) = 478
+k(5) = 1576
+k(6) = 20710
+k(7) = 29302
+k(8) = 29115
+k(9) = 29705
+k(10) = 2500
+k(11) = 7195
+k(12) = 11446
+k(13) = 23119
+k(14) = 17240
+k(15) = 25197
+k(16) = 31536
+k(17) = 22194
+k(18) = 18381
+k(19) = 21976
+k(20) = 3815
+k(21) = 23155
+k(22) = 22519
+k(23) = 11024
+k(24) = 5312
+k(25) = 17622
+k(26) = 16220
+k(27) = 15385
+k(28) = 25967
+k(29) = 478
+k(30) = 17891
+

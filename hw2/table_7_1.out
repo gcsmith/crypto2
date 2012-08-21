@@ -1,0 +1,15 @@
+p = 7
+k = 1
+n = 6
+
+printing order of each element (0 ... 6):
+    1 1 3 6 3 6 2 
+printing primitive elements:
+    3 5 
+printing powers of primitive element 3 (3^0 ... 3^6):
+    1 3 2 6 4 5 1 
+printing number of elements in each order ...
+    order[1] -> 2
+    order[2] -> 1
+    order[3] -> 2
+    order[6] -> 2

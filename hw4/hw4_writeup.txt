@@ -1,0 +1,70 @@
+Garrett Smith
+Cryptography 2
+Homework #4
+
+
+Refer to hw4.cpp for implementation, and hw4_output.txt for full results.
+
+
+6.18
+================================================================================
+
+Routine 'int_to_naf' computes NAF representation of integer value.
+Routine 'double_and_add' executes NAF double & add algorithm.
+Relevant output from hw4 application:
+
+NAF(87) = { 1 0 -1 0 -1 0 0 -1 }
+
+  [c=1] 2Q = (inf)
+  [c=1]	Q = Q + P = (inf) + (2, 6) = (2, 6)
+  [c=0] 2Q = (118, 80)
+  [c=-1] 2Q = (82, 13)
+  [c=-1] Q = Q - P = (82, 13) - (2, 6) = (68, 57)
+  [c=0] 2Q = (85, 119)
+  [c=-1] 2Q = (99, 115)
+  [c=-1] Q = Q - P = (99, 115) - (2, 6) = (87, 116)
+  [c=0] 2Q = (91, 18)
+  [c=0] 2Q = (102, 39)
+  [c=-1] 2Q = (54, 119)
+  [c=-1] Q = Q - P = (54, 119) - (2, 6) = (102, 88)
+
+calculated 87(2, 6) = (102, 88)
+
+
+7.1
+================================================================================
+
+Routine 'ex_7_1' computes k and a using process outlined in textbook.
+Relevant output from hw4 application:
+
+testing i=0 k=1165 ... pass
+gcd(y, p-1) = gcd(23972, 31846) = 2
+k = 1165
+a = 7459
+
+7.7
+================================================================================
+
+Routine 'ex_7_7' computes DSA signature and performs signature verification.
+Relevant output from hw4 application:
+
+sig(x, k) = (y, d) = (59, 79)
+(e1, e2) = (16, 57)
+y = 59 = ((A^e1)(B^e2) mod p) mod q = 59
+
+7.13
+================================================================================
+
+Routine 'compute_ecdsa' computes ECDSA signature and performs verification.
+Relevant output from hw4 application:
+
+computing ECDSA for m=54 sha1(x)=10 k=75
+  B = 54(2, 6) = (24, 44)
+  q = order(A) = 131
+  (u, v) = (88, 55)
+  (r, s) = (88, 60)
+performing signature verification...
+  (w, i, j) = (107, 22, 115)
+  (u, v) = (88, 55)
+  r = 88 = (u mod q) = 88
+

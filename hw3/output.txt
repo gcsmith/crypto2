@@ -1,0 +1,162 @@
+printing results for exercise 6.13 ...
+x = 0, y^2 = 28, qr = no
+x = 1, y^2 = 30, qr = yes, roots = (32, 39)
+x = 2, y^2 = 38, qr = yes, roots = (40, 31)
+x = 3, y^2 = 58, qr = yes, roots = (49, 22)
+x = 4, y^2 = 25, qr = yes, roots = (5, 66)
+x = 5, y^2 = 16, qr = yes, roots = (4, 67)
+x = 6, y^2 = 37, qr = yes, roots = (45, 26)
+x = 7, y^2 = 23, qr = no
+x = 8, y^2 = 51, qr = no
+x = 9, y^2 = 56, qr = no
+x = 10, y^2 = 44, qr = no
+x = 11, y^2 = 21, qr = no
+x = 12, y^2 = 64, qr = yes, roots = (8, 63)
+x = 13, y^2 = 37, qr = yes, roots = (45, 26)
+x = 14, y^2 = 17, qr = no
+x = 15, y^2 = 10, qr = yes, roots = (9, 62)
+x = 16, y^2 = 22, qr = no
+x = 17, y^2 = 59, qr = no
+x = 18, y^2 = 56, qr = no
+x = 19, y^2 = 19, qr = yes, roots = (27, 44)
+x = 20, y^2 = 25, qr = yes, roots = (5, 66)
+x = 21, y^2 = 9, qr = yes, roots = (3, 68)
+x = 22, y^2 = 48, qr = yes, roots = (30, 41)
+x = 23, y^2 = 6, qr = yes, roots = (19, 52)
+x = 24, y^2 = 31, qr = no
+x = 25, y^2 = 58, qr = yes, roots = (49, 22)
+x = 26, y^2 = 22, qr = no
+x = 27, y^2 = 0, qr = no
+x = 28, y^2 = 69, qr = no
+x = 29, y^2 = 22, qr = no
+x = 30, y^2 = 7, qr = no
+x = 31, y^2 = 30, qr = yes, roots = (32, 39)
+x = 32, y^2 = 26, qr = no
+x = 33, y^2 = 1, qr = yes, roots = (1, 70)
+x = 34, y^2 = 32, qr = yes, roots = (48, 23)
+x = 35, y^2 = 54, qr = yes, roots = (57, 14)
+x = 36, y^2 = 2, qr = yes, roots = (12, 59)
+x = 37, y^2 = 24, qr = yes, roots = (38, 33)
+x = 38, y^2 = 55, qr = no
+x = 39, y^2 = 30, qr = yes, roots = (32, 39)
+x = 40, y^2 = 26, qr = no
+x = 41, y^2 = 49, qr = yes, roots = (64, 7)
+x = 42, y^2 = 34, qr = no
+x = 43, y^2 = 58, qr = yes, roots = (49, 22)
+x = 44, y^2 = 56, qr = no
+x = 45, y^2 = 34, qr = no
+x = 46, y^2 = 69, qr = no
+x = 47, y^2 = 25, qr = yes, roots = (5, 66)
+x = 48, y^2 = 50, qr = yes, roots = (60, 11)
+x = 49, y^2 = 8, qr = yes, roots = (24, 47)
+x = 50, y^2 = 47, qr = no
+x = 51, y^2 = 31, qr = no
+x = 52, y^2 = 37, qr = yes, roots = (45, 26)
+x = 53, y^2 = 0, qr = no
+x = 54, y^2 = 68, qr = no
+x = 55, y^2 = 34, qr = no
+x = 56, y^2 = 46, qr = no
+x = 57, y^2 = 39, qr = no
+x = 58, y^2 = 19, qr = yes, roots = (27, 44)
+x = 59, y^2 = 63, qr = no
+x = 60, y^2 = 35, qr = no
+x = 61, y^2 = 12, qr = yes, roots = (15, 56)
+x = 62, y^2 = 0, qr = no
+x = 63, y^2 = 5, qr = yes, roots = (54, 17)
+x = 64, y^2 = 33, qr = no
+x = 65, y^2 = 19, qr = yes, roots = (27, 44)
+x = 66, y^2 = 40, qr = yes, roots = (18, 53)
+x = 67, y^2 = 31, qr = no
+x = 68, y^2 = 69, qr = no
+x = 69, y^2 = 18, qr = yes, roots = (36, 35)
+x = 70, y^2 = 26, qr = no
+there are 69 points on E
+    (1, 32) order = 18
+    (1, 39) order = 18
+    (2, 40) order = 6
+    (2, 31) order = 6
+    (3, 49) order = 12
+    (3, 22) order = 12
+    (4, 5) order = 36
+    (4, 66) order = 36
+    (5, 4) order = 4
+    (5, 67) order = 4
+    (6, 45) order = 18
+    (6, 26) order = 18
+    (12, 8) order = 18
+    (12, 63) order = 18
+    (13, 45) order = 36
+    (13, 26) order = 36
+    (15, 9) order = 36
+    (15, 62) order = 36
+    (19, 27) order = 6
+    (19, 44) order = 6
+    (20, 5) order = 3
+    (20, 66) order = 3
+    (21, 3) order = 36
+    (21, 68) order = 36
+    (22, 30) order = 18
+    (22, 41) order = 18
+    (23, 19) order = 36
+    (23, 52) order = 36
+    (25, 49) order = 18
+    (25, 22) order = 18
+    (31, 32) order = 9
+    (31, 39) order = 9
+    (33, 1) order = 36
+    (33, 70) order = 36
+    (34, 48) order = 36
+    (34, 23) order = 36
+    (35, 57) order = 12
+    (35, 14) order = 12
+    (36, 12) order = 9
+    (36, 59) order = 9
+    (37, 38) order = 36
+    (37, 33) order = 36
+    (39, 32) order = 6
+    (39, 39) order = 6
+    (41, 64) order = 36
+    (41, 7) order = 36
+    (43, 49) order = 36
+    (43, 22) order = 36
+    (47, 5) order = 36
+    (47, 66) order = 36
+    (48, 60) order = 36
+    (48, 11) order = 36
+    (49, 24) order = 4
+    (49, 47) order = 4
+    (52, 45) order = 12
+    (52, 26) order = 12
+    (58, 27) order = 18
+    (58, 44) order = 18
+    (61, 15) order = 18
+    (61, 56) order = 18
+    (63, 54) order = 9
+    (63, 17) order = 9
+    (65, 27) order = 18
+    (65, 44) order = 18
+    (66, 18) order = 12
+    (66, 53) order = 12
+    (69, 36) order = 18
+    (69, 35) order = 18
+printing the number of elements in each order...
+    3 -> 2
+    4 -> 4
+    6 -> 6
+    9 -> 6
+    12 -> 8
+    18 -> 18
+    36 -> 24
+printing results for exercise 6.17 ...
+2(2, 9) = (2, 9) + (2, 9) = (10, 2)
+3(2, 9) = (2, 9) + (10, 2) = (28, 6)
+4(2, 9) = (2, 9) + (28, 6) = (15, 8)
+5(2, 9) = (2, 9) + (15, 8) = (3, 3)
+6(2, 9) = (2, 9) + (3, 3) = (0, 10)
+7(2, 9) = (2, 9) + (0, 10) = (6, 24)
+8(2, 9) = (2, 9) + (6, 24) = (8, 15)
+Q = mP = (8, 15)
+(c, dk, y1_d, p0) = (T, 20, (18, 27), (15, 8))
+(c, dk, y1_d, p0) = (I, 9, (3, 3), (2, 9))
+(c, dk, y1_d, p0) = (M, 13, (17, 26), (30, 29))
+(c, dk, y1_d, p0) = (E, 5, (28, 6), (14, 19))

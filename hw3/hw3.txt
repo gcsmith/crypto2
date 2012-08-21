@@ -1,0 +1,69 @@
+Garrett Smith
+Cryptography 2
+Homework #3
+
+6.13
+--------------------------------------------------------------------------------
+
+The routine analyze_curve was developed to determine the points on a given
+elliptic curve, as well as to determine the order of each of the elements. The
+routine ex_6_13 calls analyze_curve for the curve (1, 28, 71).
+
+Refer to output.txt for the full program output.
+
+a) #E = 69
+b) There is no element with order #E = 69 on the curve E. Therefore not cyclic.
+c) The maximum order of any element is 36. One element of order 36 is (4, 5).
+
+6.16
+--------------------------------------------------------------------------------
+
+a)
+
+b) Shank's algorithm can be use to compute discrete logarithms over Zp in
+   O(p^(1/4)) time. The adaptation of Shank's algorithm to elliptic curves is
+   known as the Shanks-Mestre algorithm:
+
+( Adapted from algorithm on page 71 of "Elliptic Curves: A Computational
+Approach" by Susanne Schmitt, Horst G. Zimmer )
+
+ShanksMestre(a, b, p) -> (#E):
+    1. m <- ceil(2*p^(1/4))
+    2. Let P in E(Fp) be a random point with order > 4*sqrt(p)
+    3. Q <- (p + 1 + floor(2*sqrt(p))
+    4. Baby steps: For j = 0 to m - 1 do:
+    5.     Compute (and store) jP
+    6. Giant steps: For i = 0 to m do:
+    7.     If Q - i(mP) = jP for a 0 <= j <= m - 1 then
+    8.         t <- im + j - floor(2*sqrt(p))
+    9. Return (-t + q + 1)
+
+( Algorithm originally returned t = q + 1 - #E )
+
+6.17
+--------------------------------------------------------------------------------
+
+The routine simplified_ecies was developed to decrypt a given ciphertext using
+the Simplified ECIES algorithm.
+
+Refer to output.txt for the full program output.
+
+a) Q = mP = 8(2, 9) = (8, 15)
+
+    2(2, 9) = (2, 9) + ( 2, 9) = (10, 2)
+    3(2, 9) = (2, 9) + (10, 2) = (28, 6)
+    4(2, 9) = (2, 9) + (28, 6) = (15, 8)
+    5(2, 9) = (2, 9) + (15, 8) = (3, 3)
+    6(2, 9) = (2, 9) + ( 3, 3) = (0, 10)
+    7(2, 9) = (2, 9) + (0, 10) = (6, 24)
+    8(2, 9) = (2, 9) + (6, 24) = (8, 15)
+
+b) The decrypted plaintexts are: 20, 9, 13, 5
+
+    (c, dk, y1_d, p0) = (T, 20, (18, 27), (15, 8))
+    (c, dk, y1_d, p0) = (I, 9, (3, 3), (2, 9))
+    (c, dk, y1_d, p0) = (M, 13, (17, 26), (30, 29))
+    (c, dk, y1_d, p0) = (E, 5, (28, 6), (14, 19))
+
+c) The decrypted message is TIME.
+

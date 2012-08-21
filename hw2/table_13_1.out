@@ -1,0 +1,17 @@
+p = 13
+k = 1
+n = 12
+
+printing order of each element (0 ... 12):
+     1  1 12  3  6  4 12 12  4  3  6 12  2 
+printing primitive elements:
+     2  6  7 11 
+printing powers of primitive element 2 (2^0 ... 2^12):
+     1  2  4  8  3  6 12 11  9  5 10  7  1 
+printing number of elements in each order ...
+    order[1] -> 2
+    order[2] -> 1
+    order[3] -> 2
+    order[4] -> 2
+    order[6] -> 2
+    order[12] -> 4

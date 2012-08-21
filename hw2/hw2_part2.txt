@@ -1,0 +1,84 @@
+Garrett Smith
+Cryptography 2
+Homework #2 - Part II
+
+6.10
+--------------------------------------------------------------------------------
+
+Each answer was derived using a naive algorithm that modulo-divides the
+function f(x) by each monic polynomial of a lesser order. If the solution to
+f(x) % m(x) == 0, the polynomial f(x) is reducible in Z[2].
+
+The solutions were then verified programmatically using C++ and NTL (Number
+Theory Library). The code for this verification is in 'hw2_part2.cpp'.
+
+*** solutions ***
+
+f(x) = x^5 + x^4 + 1
+f(x) is reducible in Z2[x] : f(x) = (x^2 + x + 1)(x^3 + x + 1)
+
+f(x) = x^5 + x^3 + 1
+f(x) is irreducible in Z2[x] (no roots)
+
+f(x) = x^5 + x^4 + x^2 + 1
+f(x) is reducible in Z2[x] : f(x) = (x + 1)(x^4 + x + 1)
+
+*** output of hw2_part2 program ***
+
+Printing factorization of x^5 + x^4 + 1 ... in Z2[x]
+	(1x^2 + 1x + 1)(1x^3 + 1x + 1)
+Printing factorization of x^5 + x^3 + 1 ... in Z2[x]
+	polynomial is irreducible in Z2[x]
+Printing factorization of x^5 + x^4 + x^2 + 1 ... in Z2[x]
+	(1x + 1)(1x^4 + 1x + 1)
+Printing factorization of x^2 + 1 ... in Z131[x]
+	polynomial is irreducible in Z131[x]
+
+6.11
+--------------------------------------------------------------------------------
+
+Z2[x] / (x^5 + x^2 + 1)
+
+a.
+
+(x^4 + x^2)(x^3 + x + 1) =
+(x^7 + (2)x^5 + x^4 + x^3 + x^2) mod 2 =
+(x^7 + x^4 + x^3 + x^2) =
+(x^2)(x^5 + x^2 + 1) + x^3 =
+
+>>> x^3
+
+b.
+
+(x^5 + x^2 + 1) = (x^2 + x + 1)(x^3 + x^2) + 1
+(x^2 + x + 1)(x^3 + x^2) = 1
+(x^3 + x^2)^(-1) = (x^2 + x + 1)
+
+>>> x^2 + x + 1
+
+c.
+
+(x)(x^5 + x^2 + 1) = x^6 + x^3 + x
+
+x^6  = (x)(x^5 + x^2 + 1) + (x^3 + x)
+     = x^3 + x
+x^12 = (x^6)^2
+     = (x^3 + x)^2
+     = x^6 + (2)x^4 + x^2
+     = x^6 + x^2
+     = (x)(x^5 + x^2 + 1) + (x^3 + x^2 + x)
+     = x^3 + x^2 + x
+x^24 = (x^12)^2
+     = (x^3 + x^2 +x)^2
+     = x^6 + (2)x^5 + (3)x^4 + (2)x^3 + x^2
+     = x^6 + x^4 + x^2
+     = (x)(x^5 + x^2 + 1) + (x^4 + x^3 + x^2 + x)
+     = x^4 + x^3 + x^2 + x
+x^25 = (x)(x^25)
+     = (x)(x^4 + x^3 + x^2 + x)
+     = x^5 + x^4 + x^3 + x^2
+     = (x^5 + x^2 + 1) + (x^4 + x^3 + 1)
+     = x^4 + x^3 + 1
+
+>>> x^4 + x^3 + 1
+
